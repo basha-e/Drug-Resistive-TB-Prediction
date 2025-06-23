@@ -102,8 +102,9 @@ def input_page():
     else:
         cd4rslt = None
 
-    with open("model_rf_pipeline.pkl", "rb") as f:
+    with open("../model/model_rf_pipeline.pkl", "rb") as f:
         model = pickle.load(f)
+
 
     if st.button("Predict DR-TB"):
         binary_map = {"No": 0, "Yes": 1, "Negative": 0, "Positive": 1}
