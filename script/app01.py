@@ -102,7 +102,7 @@ def input_page():
     else:
         cd4rslt = None
 
-    with open("../model/model_rf_pipeline.pkl", "rb") as f:
+    with open("model/model_rf_pipeline.pkl", "rb") as f:
         model = pickle.load(f)
 
 
